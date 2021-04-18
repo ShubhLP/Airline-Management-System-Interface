@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="airline management system.css">
+    <title>Airline Database Management System</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img id="img-header" src="images/airline-logo.jpg" alt="airline-logo" class="logo" width="150" height="150">
+            <h1>SkyWay Airlines</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ticket Booking</a></li>
+                    <li><a href="airline dbms (pilot-plane).html">Pilot - Plane</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="main-content">
+        <div id="align">
+            <form id="form">
+                <h2>Flight Details</h2>
+                <label id="flightname-label">Flight Name: </label><br><input id="name" class="details" type="text"
+                    placeholder="Enter Plane Name" required><br>
+                <!--Here add plane no.: 12345-->
+                <label id="planeno-label">Plane Number: </label><br><input id="pnumber" class="details" type="text" pattern="\d{5}"
+                    placeholder="Enter Plane Number" required><br>
+                <label id="first-label">First Class Fare (Rs.) </label><br><input id="fare" class="details" type="text" pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" data-type="currency" 
+                    placeholder="Enter First Class Fare" required><br>
+                <label id="busi-label">Business Class Fare (Rs.) </label><br><input id="fare" class="details" type="text" pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" data-type="currency" 
+                    placeholder="Enter Business Fare" required><br>
+                <label id="eco-label">Economy Class Fare (Rs.) </label><br><input id="fare" class="details" type="text" pattern="^\$\d{1,3}(.\d{3})*(\,\d+)?$" data-type="currency" 
+                    placeholder="Enter Economy Fare" required><br>
+
+                    <center><input id="submit" type="submit" value="Add Flight"></center>
+                </form>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; 2021 [COPYRIGHT SkyWay Airlines] All rights reserved.
+    </footer>
+</body>
+
+</html>
